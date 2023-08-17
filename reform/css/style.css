@@ -1,0 +1,709 @@
+@charset "utf-8";
+
+/*
+▼使用予定カラー
+#B71B26　赤っぽい
+#223E69　青っぽい
+#FFFFFF　白
+#333333　黒っぽい
+
+▼使用予定フォント
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Serif JP', serif;
+*/
+
+body {
+  color: #333333;
+  margin: 0 auto;
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  margin: 0 auto;
+}
+header h1 {
+  margin: 16px 123px 16px 12px;
+}
+svg.logo {
+  width: 240px;
+}
+text {
+  width: 240px;
+  font-size: 16px;
+}
+ul.menu {
+  font-family: 'Noto Serif JP', serif;
+  height: 533px;
+}
+.navicon {
+  width: 31px;
+  height: 20px;
+}
+div.hero {
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100vw;
+  height: 480px;
+  background-image: url(../images/hero_sp.png);
+  margin: 0 0 48px;
+}
+main{
+  text-align: center;
+  margin-bottom: 126px;
+}
+main h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 0 auto 8px;
+}
+main h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+main h2::before,
+main h2::after {
+  content:"　　　　";
+  text-decoration: line-through;
+  margin: 0 10px;
+}
+main h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+main p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+section {
+  width: 351px;
+  margin: 0 auto 80px;
+}
+#serviceSec h3 {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  line-height: 2;
+  margin: 0 auto;
+}
+#serviceSec p {
+  text-align: left;
+}
+#serviceSec li {
+  margin-bottom: 50px;
+}
+div.moreBtn a{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  display: flex;
+  justify-content: flex-end;
+}
+div.moreBtn a p{
+  vertical-align: baseline;
+}
+#flowSec {
+  background-color: rgba(34, 62, 105, .05);
+  width: 100%;
+  padding: 16px 0;
+}
+#flowSec h1 {
+  margin: 0 auto 8px;
+}
+#flowSec h2 {
+  color: #B71B26;
+  margin: 0 auto 24px;
+}
+#flowSec li {
+  width: 300px;
+  height: 32px;
+  margin: 0 auto 8px;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-radius: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nextStep {
+  margin: 0 auto 8px;
+}
+span.nextStep {
+  display: inline-block;
+  transform: scale(2.5, 1.5);
+  transform-origin: center;
+}
+span.nextStep.a {
+  background-image: linear-gradient(90deg, #B71B26 0%, #B71B26 100%);
+  opacity: .6;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+span.nextStep.b {
+  background-image: linear-gradient(90deg, #B71B26 0%, #B71B26 100%);
+  opacity: .7;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+span.nextStep.c {
+  background-image: linear-gradient(90deg, #B71B26 0%, #B71B26 100%);
+  opacity: .8;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+span.nextStep.d {
+  background-image: linear-gradient(90deg, #B71B26 0%, #B71B26 100%);
+  opacity: .9;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+span.nextStep.e {
+  background-image: linear-gradient(90deg, #B71B26 0%, #B71B26 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.qaBlock {
+  margin-bottom: 24px;
+}
+.qaRow {
+  display: flex;
+  margin-bottom: 16px;
+}
+.qaMark {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 20px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-right: 8px;
+  padding: 4px 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+.question {
+  background-color: #333333;
+}
+.answer {
+  background-color: #B71B26;
+}
+.qaText {
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: left;
+  font-weight: 600;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  line-height: 2;
+  font-size: 16px;
+  letter-spacing: .1em;
+}
+#contactSec {
+  background-color: rgba(34, 62, 105, .15);
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  letter-spacing: .1em;
+}
+.setStyle{
+  width: 100vw;
+}
+.inquiryBlock {
+  margin: 0 12px;
+}
+.inquiry {
+  margin: 0 auto 24px;
+  max-width: 351px;
+}
+.inquiry .inputItem, 
+.inquiry .inputArea {
+  display: block;
+  text-align: center;
+}
+.inquiry .inputItem {
+  margin-bottom: 10px;
+}
+.required {
+  background-color: #B71B26;
+  color: #FFFFFF;
+  font-size: 10px;
+  letter-spacing: .1em;
+  border-radius: 8px;
+  padding: 4px 9.5px;
+  margin: 0 0 0 4px;
+  vertical-align: middle;
+}
+input[type="radio"] {
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+.selectKinds {
+  display: flex;
+  justify-content: space-between;
+}
+.selectKinds input{
+  margin: 0;
+}
+input[kinds] {
+  display: inline-block;
+}
+.selectKinds p{
+  vertical-align: top;
+}
+input, textarea {
+  width: 100%;
+  max-width: 351px;
+  height: 30px;
+  background-color: #FFFFFF;
+}
+input[name=kinds] {
+  width: auto;
+}
+.postCodeMark {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+}
+input[name=addressNum] {
+  width: 125px;
+  margin-bottom: 8px;
+}
+.address .inputArea {
+  text-align: left;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+textarea {
+  height: 120px;
+}
+.submit {
+  background-color: #333333;
+  color: #FFFFFF;
+  letter-spacing: .1em;
+  width: 200px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.submit p {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px;
+}
+.submit svg {
+  width: 6px;
+  height: 12px;
+  margin-left: 4px;
+}
+div.pageTopParent {
+  position: relative;
+}
+.pageTop {
+  position: absolute;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 46px;
+  right: 12px;
+}
+.arrowPageTop {
+  display: block;
+  transform: scale(3, 2) rotate(270deg);
+  transform-origin: center;
+  color: #FFFFFF;
+}
+footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  font-family: 'Noto Serif JP', serif;
+  height: 45px;
+  text-align: center;
+}
+footer p {
+  display: inline-block;
+  margin: 16px auto;
+}
+
+/* 以下に参考サイトのメニュー用CSSを貼り付ける */
+/* メニューを画面上部に固定表示しています */
+.gMenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  margin: 0 auto;
+}
+/* メニューアイコンを画面右上に固定しています */
+.gMenu .menu-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  height: 12px;
+}
+/* メニューアイコン（三本線）の真ん中の線です */
+.gMenu .menu-icon .navicon {
+  background: #ffc107; /* 色は自由に変更可能です */
+  display: block;
+  height: 2px; /* 太さ */
+  width: 31px; /* 長さ */
+  position: relative;
+  transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+}
+/* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after {
+  background: #ffc107; /* 色は自由に変更可能です */
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+  width: 100%;
+}
+/* 位置を上にずらしています */
+.gMenu .menu-icon .navicon::before {
+  top: 10px;
+}
+/* 位置を下にずらしています */
+.gMenu .menu-icon .navicon::after {
+  top: -10px;
+}
+/* 表示されるメニューです */
+.gMenu .menu {
+  background-color: rgba(255,255,255,0.9);
+  overflow: hidden;
+  max-height: 0; /* ★最初は高さを0にして非表示状態に */
+  transition: max-height .6s; /* 表示されるときのアニメーション */
+  text-align: center;
+}
+/* メニュー部分のデザインです */
+.gMenu .menu li:first-of-type {
+  padding-top: 50px;
+}
+.gMenu .menu li a {
+  display: block;
+  padding: 24px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.gMenu .menu li a:hover {
+  background-color: #f4f4f4;
+}
+/* チェックボックスは常に非表示です */
+.gMenu .menu-btn {
+  display: none;
+}
+/* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+.gMenu .menu-btn:checked ~ .menu {
+  max-height: 533px; /* ★チェックボックスがオンの時高さを"max-height px"にして表示させます */
+  transition: max-height .6s;
+}
+/* メニューボタンの中央の線を非表示に */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+/* メニューボタンの上下の線を45度傾けて✕印を作ります */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::before {
+  transform: rotate(-45deg);top: 0;
+}
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::after {
+  transform: rotate(45deg);top: 0;
+}
+/* サイトに合わせてオリジナルカスタマイズ */
+.gMenu .menu-icon {
+  top: 23px;
+}
+.gMenu .menu-icon .navicon,
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after {
+  background: #B71B26;
+}
+
+@media screen and (min-width: 920px) {
+  body {
+    /* width: 100%; */
+    width: 1366px;
+  }
+  .menu-btn, .menu-icon {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 24px;
+  }
+  header h1 {
+    height: 24px;
+    margin: 0;
+    margin: 24px;
+  }
+  svg.logo {
+    width: 400px;
+    line-height: 24px;
+  }
+  text {
+    width : 400px;
+  }
+  .gMenu {
+    position: static;
+    display: flex;
+    justify-content: end;
+    margin: 24px 0;
+  }
+  .gMenu .menu {
+    display: flex;
+    overflow: visible visible;
+    font-size: 16px;
+  }
+  .gMenu .menu li:first-of-type {
+    padding: 0;
+    margin: 0;
+  }
+  .gMenu .menu li a {
+    display: inline;
+    padding: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+  }
+  div.hero {
+    width: 100%;
+    height: 546px;
+    background-image: url(../images/hero_pc.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    margin-bottom: 160px;
+  }
+  main h1 {
+    font-size: 42px;
+    margin: 0 auto 8px;
+  }
+  main h2 {
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  main h3 {
+    font-size: 28px;
+  }
+  main p {
+    font-size: 16px;
+    text-align: left;
+  }
+  main {
+    margin-bottom: 219px;
+  }
+  section {
+    width: 1020px;
+    margin: 0 auto 160px;
+  }
+  #serviceSec ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  #serviceSec ul li {
+    width: 300px;
+  }
+  #serviceSec ul li img {
+    width: 300px;
+  }
+  #serviceSec p {
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  #flowSec {
+    padding: 48px 0;
+  }
+  #flowSec ul{
+    display: flex;
+    width: 920px;
+    height: 280px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  #flowSec ul li {
+    writing-mode: vertical-rl;
+    width: 60px;
+    height: 100%;
+    margin: 0;
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-size: 28px;
+  }
+  span.nextStep {
+    display: inline-block;
+    transform: scale(3, 5) rotate(270deg);
+    transform-origin: center;
+    line-height: 2;
+  }
+  .qaBlock {
+    margin-bottom: 48px;
+  }
+  .qaRow {
+    align-items: center;
+  }  
+  .qaMark {
+    font-size: 34px;
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+    border-radius: 50%;
+  }
+  .qaText {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  #contactSec {
+    font-size: 20px;
+    padding: 48px 0;
+  }
+  .inquiryBlock {
+    width: 1020px;
+    height: 1000px;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 0 auto;
+    padding: 48px 0;
+  }
+  .inquiry {
+    display: flex;
+    margin-left: 16px;
+    max-width: 100%;
+  }
+  .required{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    border-radius: 8px;
+    padding: 3px 12px;
+    margin: 0 8px;
+    vertical-align: middle;
+    height: 24px;
+    width: 58px;
+  }
+  .selectKinds {
+    justify-content: start;
+  }
+  .selectKinds label{
+    align-content: center;
+    margin-right: 40px;
+  }
+  label input {
+    border: none;
+    vertical-align: middle;
+  }
+  .inquiry .inputItem {
+    width: 332px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 52px;
+    margin-bottom: 0;
+  }
+  .content .inputItem {
+    padding-right: 74px;
+  }
+  .inquiry .inputArea {
+    vertical-align: baseline;
+    width: 664px;
+    margin-right: 24px;
+    margin-bottom: 0;
+    line-height: 52px;
+    text-align: left;
+  }
+  .address .inputArea {
+    font-size: 20px;
+  }
+  input, textarea {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+  input {
+    height: 52px;
+  }
+  textarea {
+    height: 208px;
+  }
+  .postCodeMark {
+    font-size: 20px;
+    line-height: 52px;
+    vertical-align: top;
+  }
+  input[name=addressNum] {
+    width: 222px;
+    margin-bottom: 24px;
+  }
+  .submit {
+    margin: 48px auto;
+    width: 300px;
+    height: 68px;
+  }
+  .submit p {
+    font-size: 20px;
+    line-height: 68px;
+  }
+  .submit svg {
+    width: 9.5px;
+    height: 19px;
+    margin-left: 8px;
+  }
+  .kinds .inputItem,
+  .kinds .inputArea,
+  .kinds .inputArea * {
+    height: 30px;
+    line-height: 30px;
+    /* margin-bottom: 24px; */
+  }
+  .pageTop {
+    width: 60px;
+    height: 60px;
+    right: 24px;
+  }
+  .arrowPageTop {
+    transform: scale(4, 3) rotate(270deg);
+  }
+  footer {
+    height: 62px;
+  }
+  footer p {
+    margin: 24px auto;
+  }
+}
