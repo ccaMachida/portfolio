@@ -1,0 +1,553 @@
+@charset "utf-8";
+/***********
+トップページのCSS
+***********/
+body {
+  width: 100%;
+  /* min-height: 100%; */
+  margin: 0 auto;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+#wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+/* テキスト行間設定 */
+.textLine {
+  line-height: 1.6;
+}
+.onlyPc {
+  display: none;
+}
+
+/***********
+ヘッダー領域
+***********/
+
+/* 共通h2 */
+h2 {
+  width: 220px;
+  height: 40px;
+  margin: 20px auto 60px;
+  background-image: url("../images/headerBackSP.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-size: 8px;
+}
+h2 span {
+  font-size: 2rem;
+}
+/* モバイル非表示 */
+.sliderIcon1, .sliderIcon2 {
+  display: none;
+}
+/* リンクデコレーション */
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #0000ff;
+}
+/* コンテンツ下線 */
+.underLine {
+  width: 223px;
+  margin: 112px auto 60px;
+  border-bottom: 1px solid #000;
+}
+/***********
+トップビュー領域
+***********/
+.topView {
+  background-image: url("../images/heroSP.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+  height: 667px;
+  position: relative;
+}
+h1 {
+  width: 335px;
+  height: 135px;
+  margin: 0 auto;
+}
+h1 img {
+  max-width: 100%;
+  padding-top:200px;
+}
+.snsTop {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 136px;
+}
+.snsTop img {
+  max-width: 32px;
+}
+
+/* コンテンツ領域 */
+section {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 12px;
+}
+.startFlag {
+  width: 32px;
+  height: 24px;
+  margin: 20px auto 40px;
+}
+.startContents1 {
+  width: 100%;
+  height: 407px;
+  background-image: url("../images/infoBack1SP.png");
+}
+.startContents1 h3 {
+  font-size: 20px;
+  width: 76px;
+  margin: 0 auto 20px;
+}
+.startContents1 p {
+  border-bottom: 1px solid #000;
+  width: 132px;
+  padding-bottom: 12px;
+  margin: 0 auto 60px;
+}
+.startContents2 {
+  background-image: url("../images/infoBack2SP.png");
+  width: 100%;
+  height: 399px;
+  padding-top: 20px;
+}
+.startContents2 p {
+  width: 223px;
+  margin: 0 auto 60px;
+  padding: 12px 0;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.startImage {
+  margin: 0 auto 60px;
+}
+.startImage picture img{
+  width: 335px;
+  height: 139px;
+}
+.startContents2, .startContents1 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* startコンテンツ領域*/
+/* #startContents {
+} */
+
+/* Galleryコンテンツ領域 */
+#sliderContents {
+}
+.sliderImage {
+  width: 295px;
+  height: 467px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.slideImg {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+}
+.slideItem {
+  margin: 0 10px;
+}
+.sliderContloler,
+.sliderIndicators {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  width: 100%;
+}
+.sliderContloler {
+  justify-content:space-evenly;
+}
+.sliderIndicators {
+  justify-content: space-around;
+}
+.button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.sliderIndicators .setShape {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  /* border: solid 1px black; */
+  background-color: grey;
+}
+.sliderIndicators .active {
+  background-color: black;
+}
+/* Travelコンテンツ領域 */
+#travelContent .textLine {
+  width: 18.583rem;
+  margin: 0 auto;
+  padding: 1rem 0px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.travelMap {
+  width: 180px;
+  height: 355px;
+  position: relative;
+  margin: 0 auto;
+}
+.travelText {
+  margin: 0 auto 60px;
+}
+.map {
+  width: 180px;
+  height: 355px;
+}
+.linkImage1, .linkImage2, .linkImage3 {
+  width: 59px;
+  height: 126px;
+  position: absolute;
+}
+.linkImage1 {
+  top: 82px;
+  left: -37px;
+}
+.linkImage2 {
+  top: 55px;
+  right: -38px;
+}
+.linkImage3 {
+  bottom: -52px;
+  left: 15px;
+}
+/* eventコンテンツ領域 */
+#eventContent {
+  width: 375px;
+  height: 1116px;
+}
+.eventImage {
+  margin: 20px auto;
+  width: 335px;
+  height: 194px;
+}
+.event {
+  font-weight: bold;
+  margin: 0 auto 8px;
+}
+.eventText {
+  margin: 0 auto 20px;
+}
+article .textLine {
+  width: 223px;
+  margin: 0 auto 40px;
+  padding: 12px 0px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.event1,
+.event2 {
+  margin: 0 auto;
+}
+/* 基本情報コンテンツ領域 */
+.basicFlame {
+  border: 1px solid #8F8F8F;
+  width: 335px;
+  height: 554px;
+  margin: 20px auto 60px;
+  text-align: center;
+}
+.basicFlame h3 {
+  margin: 20px auto 40px;
+  font-size: 20px;
+  width: 123px;
+  height: 20px;
+}
+.basicBox1, .basicBox2 {
+  margin: 0 20px 40px;
+  text-align: left;
+  width: 295px;
+  height: 192px;
+}
+
+/* PC向け */
+  @media (min-width: 768px) {
+  body {
+    font-size: 24px;
+    margin: 0;
+  }
+  /* PC表示なし */
+  .dW {
+    display: none;
+  }
+  /* コンテンツ下線 */
+  .underLine {
+    width: 24rem;
+    margin: 4rem auto;
+  }
+  /* PC h2設定 */
+  h2 {
+    width: 26.5rem;
+    height: 4.8rem;
+    margin: 2.2rem auto 0 5.15rem;
+    background-image: url("../images/headerBackPC.png");
+    background-position: 0 -1.2rem;
+    font-size: 1.2rem;
+  }
+  h2 span {
+    font-size: 2.4rem;
+  }
+  /* TOPビュー領域 */
+  .topView {
+    background-image: url("../images/heroPC.png");
+    padding: 0;
+  }
+  header {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    margin: 0;
+  }
+  .topImages img {
+    display: block;
+    position: absolute;
+    top: 174px;
+    left: 223px;
+    width: 780px;
+    height: 314px;
+  }
+  .snsTop {
+    top: 66.666%;
+    left: 7.540%;
+  }
+  .snsTop img {
+    min-width: 32px;
+  }
+  /* ヘッダー領域 */
+  .headLogo {
+    width: 6.65rem;
+    height: auto;
+  }
+  .globalMenu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 20px 103px;
+    width: 1160px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+  }
+  .globalMenu .headLogo {
+    position: static;
+  }
+  .globalMenu a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .globalMenu a:hover {
+    color: #0000ff;
+  }
+  .globalMenu :first-child {
+    margin: 0 auto 0 1rem;
+  }
+  .globalMenu :last-child {
+    margin: 0;
+  }
+
+  /* PCコンテンツ領域 */
+  .startContents1 {
+    background-image: url("../images/infoBack1PC.png");
+  }
+  .startContents2 {
+    background-image: url("../images/infoBack2PC.png");
+  }
+  .startContents1, .startContents2 {
+    display: flex;
+    padding: 4rem 5.15rem;
+  }
+  .startFlag {
+    width: 5.2rem;
+    margin-left: 9rem;
+  }
+  .startFlex1 {
+    text-align: left;
+  }
+  .startFlex1 h3 {
+    font-size: 2.4rem;
+    padding: 5rem 0 1rem 0;
+  }
+  .startFlex1 p {
+    font-size: 1.6rem;
+    width: 18.05rem;
+    padding-bottom: 1rem;
+    margin-right: 8.15rem;
+  }
+  .startImage picture img{
+    width: 636px;
+    height: 298px;
+  }
+  .startContents2 p {
+    width: 21rem;
+    padding: 3rem 0 3rem 0;
+    margin-right: 5.2rem;
+  }
+  /* Galleryコンテンツ領域 */
+  .onlyPc {
+    display: block;
+  }
+  .sliderImage {
+    width: 295px;
+    height: 467px;
+  }
+  .sliderIcon1, .sliderIcon2 {
+    display: block;
+    max-width: 3.2rem;
+    height: auto;
+    padding-top: 0;
+  }
+  .sliderIcon1 {
+    margin: 0 3rem 0 0;
+  }
+  .button {
+    margin: 0;
+    padding: 3rem 0 0 0;
+    align-items: center;
+  }
+  .sliderButton {
+    width: 1.4rem;
+    margin: 0 3rem 0 0;
+  }
+  #sliderContent {
+    padding-bottom: 4rem;
+  }
+  /* Travelコンテンツ領域 */
+  #travelContent h2 {
+    margin: 0 5.15rem 0 auto;
+  }
+  .pcTravel {
+    display: flex;
+    padding: 7.2rem 0 5.15rem 8.15rem;
+    align-items: center;
+  }
+  .travelText {
+    padding-right: 14.95rem;
+    margin: 0 auto 60px;
+  }
+  #travelContent p {
+    width: 21rem;
+    padding: 3rem 0;
+  }
+  .travelMap {
+    padding: 0;
+  }
+  .map {
+    width: 11.25rem;
+    height: 25.4rem;
+  }
+  .linkImage1, .linkImage2, .linkImage3 {
+    width: 4.95rem;
+  }
+  .linkImage1 {
+    top: 4.5rem;
+    right: 10.25rem;
+  }
+  .linkImage2 {
+    top: 3.05rem;
+    left: 11.1rem;
+  }
+  .linkImage3 {
+    top: 20.1rem;
+    right: 7.1rem;
+  }
+  /* eventコンテンツ領域 */
+  #eventContent {
+    margin-top: 4rem;
+    padding-top: 1rem;
+  }
+  #eventContent h2 {
+    margin-top: 1.2rem;
+  }
+  #eventContent h3 {
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+  }
+  .pcEvent1 h3 {
+    line-height: 1.6;
+  }
+  .event1, .event2 {
+    margin: 4rem 5.15rem 4rem 5.15rem;
+    display: flex;
+    padding: 0;
+  }
+  .event2 {
+    padding-bottom: 4rem;
+  }
+  .pcEvent1 {
+    text-align: left;
+  }
+  .pcEvent1, .pcEvent2 {
+    width: 29rem;
+  }
+  .eventImage {
+    padding: 0;
+  }
+  .event1 .event {
+    padding: 5.35rem 0 1.6rem 0;
+  }
+  .event2 .event {
+    padding: 9.36rem 0 1.6rem 0;
+  }
+  .eventText {
+    width: 21.25rem;
+    padding-bottom: 1.6rem;
+    margin: 0 auto;
+  }
+  article .textLine {
+    width: 15.7rem;
+    padding: 1.6rem 0px;
+  }
+  /* 基本情報コンテンツ領域 */
+  .basicFlex {
+    display: flex;
+  }
+  .basicFlame {
+    border: 1px solid #8F8F8F;
+    margin: 4rem 8.15rem;
+    text-align: center;
+  }
+  .basicFlame h3 {
+    font-size: 2rem;
+    margin: 2rem 0 4rem 0;
+  }
+  .basicBox1, .basicBox2 {
+    width: 22.5rem;
+    height: 16rem;
+  }
+  .basicBox1 {
+    margin: 0 2rem 4rem 2rem;
+  }
+  .basicBox2 {
+    margin: 0 2rem 4rem 1rem;
+  }
+}
