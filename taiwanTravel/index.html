@@ -1,1 +1,176 @@
-TEST
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TaiwanTravel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="common/drawer.css" type="text/css">
+  <link rel="stylesheet" href="common/footer.css" type="text/css">
+  <link rel="stylesheet" href="common/backTop.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="topView">
+      <!-- ドロワーのコンポーネント -->
+      <drawer></drawer>
+      <nav class="globalMenu">
+        <img src="images/logoHeaderPC.svg" class="headLogo" alt="ヘッダーロゴ">
+        <a href="index.html">TOP</a>
+        <a href="taipei/index.html">台北</a>
+        <a href="taichu/index.html">台中</a>
+        <a href="tainan/index.html">台南</a>
+        <a href="">当サイトのポリシー</a>
+        <a href="">お問い合わせ</a>
+      </nav>
+      <h1>
+        <picture>
+          <source srcset="images/mainLogoSP.png" media="(max-width: 768px)" alt="タイトルロゴ">
+          <img src="images/mainLogoPC.svg" alt="タイトルロゴ">
+        </picture>
+      </h1>
+      <div class="snsTop">
+          <a><img src="images/iconFb.svg" class="snsIcon" alt="facebook"></a>
+          <a><img src="images/iconInsta.svg" class="snsIcon" alt="instagram"></a>
+          <a><img src="images/IconTwi.svg" class="snsIcon" alt="twitter"></a>
+      </div>
+    </div>
+
+    <section id="startContents">
+      <div class="startContents1">
+        <div class="startFlex1"> <img src="images/taiwanFlagPC.svg" class="startFlag" alt="国旗">
+          <h3>Formosa</h3>
+          <p>フォルモサ（麗しの島）</p>
+        </div>
+        <div class="startImage">
+          <picture>
+            <source srcset="images/infoImg1PC.png" media="(max-width: 768px)" alt="紹介１">
+            <img src="images/infoImg1SP.png" alt="紹介１">
+          </picture>
+        </div>
+      </div>
+      <div class="startContents2">
+        <div class="startText">
+          <p align="justify" class="textLine">フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
+        </div>
+        <div class="startImage">
+          <picture>
+            <source srcset="images/infoImg2PC.png" media="(max-width: 768px)" alt="紹介2">
+            <img src="images/infoImg2SP.png" alt="紹介2"> </picture>
+        </div>
+      </div>
+    </section>
+    
+    <section id="sliderContent">
+      <h2><span>Gallery&ensp;</span>ギャラリー</h2>
+      <div id="imgSlider">
+        <div class="slideImg"></div>
+        <div class="sliderContloler">
+          <div class="prev onlyPc">＜</div>
+          <div class="sliderIndicators"></div>
+          <div class="next onlyPc">＞</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="travelContent">
+      <h2><span>Travel&ensp;</span>おすすめスポット</h2>
+      <div class="pcTravel">
+        <div class="travelText">
+          <p align="justify" class="textLine">訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介。様々な風景に誰もが魅了されます。</p>
+        </div>
+        <div class="travelMap"> 
+          <img src="images/taiwanMapSP.png" class="map" alt="地図">
+          <a href="taichu.html"><img src="images/linkTaichu.png" class="linkImage1" alt="台中リンク"></a>
+          <a href="taipei.html"><img src="images/linkTaipei.png" class="linkImage2" alt="台北リンク"></a>
+          <a href="tainan.html"><img src="images/linkTainan.png" class="linkImage3" alt="台南リンク"></a>
+        </div>
+      </div>
+      <p class="underLine"></p>
+    </section>
+
+    <section id="eventContent">
+      <h2><span>Event&ensp;</span>おすすめイベント</h2>
+      <article class="event1">
+        <div class="pcEvent1">
+          <h3>台湾ランタンフェスティバル</h3>
+          <div class="eventImage">
+            <picture>
+              <source srcset="images/eventLantanSP.png" media="(max-width: 768px)" alt="ランタン">
+              <img src="images/eventLantanPC.png" alt="ランタン"> </picture>
+          </div>
+        </div>
+        <div class="pcEvent2">
+          <p class="event">開催期間</p>
+          <p class="eventText">春節&ensp;旧暦元日（2024年2月24日～3月2日予定）</p>
+          <p align="justify" class="textLine">春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式。吉祥や邪気払いの意味があります。</p>
+        </div>
+      </article>
+      <article class="event2">
+        <div class="pcEvent1">
+          <h3>台北最High新年城<br>
+            カウントダウンパーティー</h3>
+          <div class="eventImage">
+            <picture>
+              <source srcset="images/eventCountdownSP.png" media="(max-width: 768px)" alt="カウントダウン">
+              <img src="images/eventCountdownPC.png" alt="カウントダウン"> </picture>
+          </div>
+        </div>
+        <div class="pcEvent2">
+          <p class="event">開催期間</p>
+          <p class="eventText">12月31日～1月1日</p>
+          <p align="justify" class="textLine">台北101では毎年、新年を祝う花火を実施。元旦0時から約3分間、台北101を覆い尽くすように、ビル全体から美しい火花が舞い散ります。世界中から注目されるイベントの一つです。</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="basic">
+      <div class="basicFlame">
+        <h3>台湾基本情報</h3>
+        <div class="basicFlex">
+          <div class="basicBox1">
+            <p align="justify" class="textLine">
+              ■正式名称：中華民国・台湾<br>
+              &ensp;&ensp;Republic&ensp;of&ensp;China,Taiwan<br>
+              ■首都：台北<br>
+              ■人口：約2,300万人<br>
+              ■面積：約3万6,000km²<br>
+              ■人種・民族：漢民族、先住民<br>
+              ■宗教：仏教、道教、キリスト教、その他<br>
+              ■言語：北京語、台湾語<br>
+              ■通貨：元（ニュー台湾ドル）<br>
+              ■時差：1時間 台湾が正午のとき、日本は午後1時<br>
+            </p>
+          </div>
+          <div class="basicBox2">
+            <p align="justify" class="textLine">
+              ■台湾の気候・服装<br>
+              ■亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で暑く、北部は大陸性気候の影響を受けて冷え込むこともあるなど、地域差を頭に入れて服装の準備を。<br>
+              ■台湾の祝祭日<br>
+              ■正月：1月1日<br>
+              ■端午節※：6月22日 ■春節※：1月20日～29日<br>
+              ■中秋節※：9月29日 ■和平記念日：2月28日<br>
+              ■国慶節：10月10日 ■清明節：4月5日</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--フッター情報のコンポーネント-->
+    <footerinfo></footerinfo>
+
+    <!--ページトップへ戻るボタンのコンポーネント-->
+    <backtop></backtop>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="common/drawer.js"></script>
+  <script src="common/footer.js"></script>
+  <script src="common/backTop.js"></script>
+  <script src="common/vueMain.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
