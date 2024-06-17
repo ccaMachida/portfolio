@@ -1,0 +1,519 @@
+/* 台中ページのCSS */
+@charset "utf-8";
+body {
+  width: 375px;
+  margin: 0 auto;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+#wrapper {
+  width: 375px;
+  overflow: hidden;
+  display: block;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* テキスト行間設定 */
+.topText, .atText, .atText2 p, .startText, .muFrame h3, .swText, .swTextsub {
+  line-height: 1.6;
+}
+/*  */
+picture {
+  margin: 0 auto;
+}
+/* ヘッダー領域 */
+
+/* 共通h2 */
+h2 {
+  width: 220px;
+  height: 40px;
+  margin: 20px auto 60px;
+  background-image: url("../images/headerBackSP.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+h2 p {
+  display: inline-block;
+  line-height: 24px;
+  height: 24px;
+  margin: 8px auto;
+  font-size: 12px;
+  font-weight: normal;
+}
+.titleL {
+  font-size: 2em;
+}
+/* モバイル非表示 */
+.globalMenu {
+  display: none;
+}
+/* リンクデコレーション */
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #0000ff;
+}
+/* コンテンツ下線 */
+.underLine {
+  width: 223px;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid #000;
+}
+/* TOPビュー */
+.topView {
+  display: block;
+  background-image: url("../images/heroTaichuSP.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 375px;
+  height: 667px;
+  box-sizing: border-box;
+  position: relative;
+}
+.headLogo1 {
+  width: 111px;
+  height: auto;
+  position: absolute;
+  top: 2px;
+  left: 20px;
+}
+.mainLogo {
+  display: block;
+  background-image: url("../images/mainlogoTaichuSP.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 199px;
+  height: 372px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 116px;
+  left: 88px;
+}
+.snsTop {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 136px;
+}
+.snsTop img {
+  max-width: 32px;
+}
+.topText {
+  color: #fff;
+  font-size: 12px;
+  width: 65.866%;
+  position: absolute;
+  right: 5.333%;
+  top: 88.788%;
+}
+
+/* パンクズリスト */
+.breadcrumb {
+  padding: 8px 20px;
+  border-bottom: solid 1px;
+  height: 32px;
+  margin: 0;
+}
+.breadcrumb-item {
+  margin-top: -5px;
+  font-size: 16px;
+}
+
+/* コンテンツ領域 */
+main {
+  text-align: center;
+}
+section {
+  text-align: center;
+  width: 100%;
+}
+/* attractionコンテンツ領域 */
+#attractionContent h3 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  margin-bottom: 20px;
+}
+.atImage img,
+.subAtImage img,
+.atText,
+.atText2 {
+  display: block;
+  margin: 0 auto 20px;
+}
+.atImage img {
+  width: 295px;
+  height: 221px;
+}
+.atText,
+.atText2 {
+  width: 295px;
+  padding: 8px 36px;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: left;
+  background-color: rgba(237, 161, 132, 0.2);
+}
+.subAtImage img {
+  width: 295px;
+  height: 150px;
+}
+
+/* Museumコンテンツ領域 */
+#museumContent h2 {
+  margin: 0 auto;
+}
+.muFrame {
+  margin-bottom: 40px;
+}
+.muBox {
+  width: 295px;
+  margin: 0 auto;
+  position: relative;
+}
+.muBox .muName {
+  font-size: 12px;
+  text-align: left;
+}
+.muBox .muName span {
+  font-weight: bold;
+}
+.msImage img {
+  width: 295px;
+  height: 135px;
+  margin: 0 auto 8px;
+}
+.startText {
+  width: 223px;
+  padding: 16px 0;
+  margin: 0 auto 20px;
+  font-size: 12px;
+}
+.moButton {
+  width: 108px;
+  height: 36px;
+  border: solid 4px rgba(237, 161, 132, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 auto;
+  line-height: 36px;
+  font-size: 12px;
+}
+/* sweetsコンテンツ領域 */
+#sweetsContent h2 {
+  margin: 0 auto 60px;
+}
+#sweetsContent h3 {
+  font-size: 24px;
+}
+.swText {
+  width: 223px;
+  margin: 0 auto 20px;
+  padding-top: 12px;
+  border-top: 1px solid #000;
+  text-align: left;
+  font-size: 12px;
+}
+.swImage1 img {
+  width: 223px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+.swTextSub {
+  width: 223px;
+  margin: 0 auto 20px;
+  text-align: left;
+  font-size: 12px;
+}
+.swSubImage {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto 20px;
+}
+.swImage2 {
+  margin: 0;
+  width: 157.5px;
+  height: 225px;
+}
+.swFlex2 {
+  margin: 0 auto 20px;
+}
+
+/* Museumモーダル */
+.modalDes
+{
+  background-color: #0180BE;
+  color: #ffffff;
+  margin: 0;
+  width: 375px;
+  height: auto;
+}
+.modal-dialog {
+  margin: 0;
+  width: 375px;
+  height: auto;
+}
+.modalClose {
+  width: 28px;
+  height: 28px;
+  margin: 8px 8px auto auto;
+}
+.modalCloseIcon {
+  width: 28px;
+  height: 28px;
+}
+.modal-title {
+  display: inline-block;
+  width: 192px;
+  height: 24px;
+  margin: 0 auto 40px;
+  font-size: 24px;
+}
+.mMflex {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto 40px;
+}
+picture.mMimg{
+  margin: 0;
+}
+.mMflex img {
+  width: 157.5px;
+  height: 165px;
+}
+.mMtx {
+  width: 239px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 auto 60px 20px;
+  text-align: left;
+}
+
+/* PC向け */
+@media screen and (min-width: 768px) {
+  /* コンテンツ下線 */
+  .underLine {
+    width: 24rem;
+    margin: 4rem auto;
+  }
+  h2 {
+    width: 26.5rem;
+    height: 4.8rem;
+    margin: 0 auto 0 0;
+    background-image: url("../images/headerBackPC.png");
+    background-position: 0 -1.2rem;
+    font-size: 1.2rem;
+  }
+  h2 span {
+    font-size: 2.4rem;
+  }
+  /* TOPビュー */
+  .topView {
+    background-image: url("../images/heroTaichuPC.png");
+    padding: 1rem 5.15rem 0 5.15rem;
+  }
+  h1 {
+    width: 21.916%;
+    height: auto;
+    left: 26.5739%;
+    top: 12.2395%;
+  }
+  h1 img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    min-width: 250px;
+  }
+  .topText {
+    font-size: 1rem;
+    width: 34.1874%;
+    height: auto;
+    right: 7.5402%;
+    top: 84.89583%;
+  }
+  .snsTop li:nth-child(2), .snsTop li:last-child {
+    margin-top: 2rem;
+  }
+  .snsTop {
+    left: 5.15rem;
+  }
+  .snsTop img {
+    min-width: 32px;
+  }
+  /* TOPヘッダー */
+  header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  .headLogo {
+    width: 6.65rem;
+    height: auto;
+  }
+  .globalMenu {
+    width: 100%;
+    height: auto;
+    display: block;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-items: flex-end;
+    margin: 0 auto;
+  }
+  .globalMenu a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+	.globalMenu a:hover {
+	color: #0000ff;
+}
+  .globalMenu :first-child {
+    margin: 0 auto 0 1rem;
+  }
+  .globalMenu :last-child {
+    margin: 0;
+  }
+  /* パンクズリスト */
+  .breadCrumb {
+    padding: 1rem 5.15rem;
+  }
+  /* PCコンテンツ領域 */
+  main {
+    width: 60rem;
+    margin: 0 auto;
+  }
+  #museumContent, #attractionContent, #sweetsContent {
+    padding-top: 2.2rem;
+  }
+
+  /* attractionコンテンツ領域 */
+  #attractionContent h3 {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 2.8rem;
+  }
+  .atFrame1,
+  .atFrame2 {
+    margin-bottom: 40px;
+  }
+  .atFlex1, .atFlex2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .atImage img {
+    width: 30rem;
+    height: auto;
+  }
+  .subAtImage img {
+    width: 30rem;
+    height: auto;
+  }
+  .atText {
+    width: 21rem;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+  .atText2 {
+    width: 25rem;
+    height: 7.2rem;
+    padding: 2rem 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* museumコンテンツ領域 */
+  #museumContent h2 {
+    margin: 0 auto;
+  }
+  .startText {
+    width: 223px;
+    padding: 16px 0;
+    margin: 0 auto 20px;
+    font-size: 12px;
+  }
+  .muFrame {
+    margin-bottom: 40px;
+  }
+  .muFlex1, .muFlex2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+  /* .muBox1, .muBox2, .muBox3, .muBox4 {
+    padding-bottom: 0;
+    width: 26.5rem;
+  } */
+  /* .muFlex1 {
+    margin-bottom: 3rem;
+  } */
+  .muFrame h3 {
+    font-size: 1.8rem;
+    padding-left: 0;
+  }
+  .msImage img {
+    width: 295px;
+    height: 135px;
+    margin: 0 auto 20px;
+  }
+  .moButton {
+    width: 10.6rem;
+    height: 3.8rem;
+    margin: 0 0 0 auto;
+  }
+	
+  /* sweetsコンテンツ領域 */
+  #sweetsContent h3 {
+    font-size: 1.8rem;
+  }
+  .swText {
+    width: 21rem;
+    margin: 0 auto;
+    padding: 1rem 0px;
+  }
+  .swTextBox {
+    width: 21rem;
+    margin: 2.8rem auto 4rem 2.75rem;
+  }
+  .swFlex1, .swFlex2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  .swFlex1 img {
+    width: 28rem;
+    margin-right: 3rem;
+  }
+  .swFlex2 img {
+    width: 28rem;
+    margin-left: 3rem;
+  }
+  .swImage2 img {
+    width: 20rem;
+  }
+  .swTextsub {
+    width: 21rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .swSubimage {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    width: 48rem;
+  }
+}
