@@ -1,0 +1,23 @@
+/* 「TOPへもどる」ボタン関連CSS */
+/* SP向け */
+.backTop {
+    position: fixed;
+    margin: 0;
+    background-image: url(../images/backTop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    right: 4px;
+    bottom: 4px;
+}
+
+/* PC向け */
+@media (min-width: 768px) {
+    .backTop {
+        width: 100px;
+        height: 100px;
+        right: 30px;
+        bottom: 30px;
+    }
+}

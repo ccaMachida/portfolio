@@ -1,0 +1,105 @@
+/* フッター領域 */
+footer {
+    width: 100%;
+    /* height: 349px; */
+    background-color: #007AB7;
+    text-align: center;
+    color: #fff;
+}
+.footFlag {
+    width: 32px;
+    height: 24px;
+    margin: 20px auto;
+}
+footer nav {
+    margin: 0 auto 40px;
+}
+.footLogo {
+    width: 71px;
+    height: 28px;
+    margin: 0px 24px 12px 20px;
+}
+li.footer {
+    width: 195px;
+    height: 19px;
+    border-bottom: solid #ffffff 1px;
+    text-align: left;
+    font-size: 12px;
+    padding: 0 0 6px;
+    margin: 12px auto 0;
+}
+li a {
+    color: #ffffff;
+}
+footer li:first-child {
+    margin-top: 0px;
+}
+.footImage {
+    display: flex;
+    box-sizing: border-box;
+}
+.footSns {
+    width: 136px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyRight {
+    width: 100%;
+    height: 34px;
+    border-top: #03A9F4 1px solid;
+}
+.copyRight p {
+    height: 10px;
+    font-size: 10px;
+    margin: 12px auto;
+}
+/* SNSアイコンサイズ指定 */
+.snsIcon {
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+/* PC向け */
+@media (min-width: 768px) {
+    /* フッター領域 */
+    .pcFoot nav, .footImage, .footSns {
+        margin: 0;
+        padding: 0;
+    }
+    .footFlag {
+        width: 3.2rem;
+    }
+    .pcFoot {
+        display: flex;
+        align-items: flex-end;
+        padding: 1.4rem 4.2rem 1rem 5.2rem;
+    }
+    .pcFoot nav li {
+        width: 16.6rem;
+    }
+    .footLogo {
+        width: 12.8rem;
+        margin: 0;
+    }
+    .footImage {
+        margin-left: auto;
+        align-items: flex-end;
+    }
+    .footSns {
+        margin-left: 13.455rem;
+    }
+    .snsIcon {
+        width: 1.6rem;
+        height: auto;
+        box-sizing: border-box;
+    }
+    footer {
+        margin: 0;
+        padding: 2rem 0 1rem;
+    }
+    .copyRight {
+        padding-top: 1rem;
+    }
+}
