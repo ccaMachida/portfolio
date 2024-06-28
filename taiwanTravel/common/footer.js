@@ -1,3 +1,5 @@
+// drawer.jsでlet linkPathは読み込み済み
+
 const footerInfo = {
     template: `
 <footer>
@@ -5,10 +7,10 @@ const footerInfo = {
 <div class="pcFoot">
   <nav>
     <ul>
-      <li class="footer"><a href="index.html">TOPへもどる</a></li>
-      <li class="footer"><a href="taipei/index.html">台北</a></li>
-      <li class="footer"><a href="taicyu/index.html">台中</a></li>
-      <li class="footer"><a href="tainan/index.html">台南</a></li>
+      <li class="footer"><a href="${linkPath}index.html">TOPへもどる</a></li>
+      <li class="footer"><a href="${linkPath}taipei/index.html">台北</a></li>
+      <li class="footer"><a href="${linkPath}taichu/index.html">台中</a></li>
+      <li class="footer"><a href="${linkPath}tainan/index.html">台南</a></li>
       <li class="footer"><a>当サイトのポリシー</a></li>
       <li class="footer"><a>お問い合わせ</a></li>
     </ul>

@@ -47,4 +47,5 @@ ul {
     max-width: 48px;
     top: 4px;
     right: 4px;
+    z-index: 1000;
 }

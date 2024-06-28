@@ -1,3 +1,12 @@
+const thisPage = document.body.getAttribute('id');
+let linkPath;
+
+if (thisPage === 'top') {
+  linkPath = ''
+} else {
+  linkPath = '../'
+}
+
 const drawer = {
     template: `
 <!-- ↓ドロワー↓ -->
@@ -15,11 +24,11 @@ const drawer = {
       </div>
       <div class="offcanvas-body menuInnner">
         <p class="menuTitle">Menu</p>
-        <a href="index.html" class="mb-4">TOP</a>
+        <a href="${linkPath}index.html" class="mb-4">TOP</a>
         <ul>
-          <li class="mb-2"><a href="taipei/index.html">台北</a></li>
-          <li class="mb-2"><a href="taichu/index.html">台中</a></li>
-          <li class="mb-4"><a href="tainan/index.html">台南</a></li>
+          <li class="mb-2"><a href="${linkPath}taipei/index.html">台北</a></li>
+          <li class="mb-2"><a href="${linkPath}taichu/index.html">台中</a></li>
+          <li class="mb-4"><a href="${linkPath}tainan/index.html">台南</a></li>
         </ul>
         <a href="" class="mb-4">当サイトのポリシー</a>
         <a href="" class="">お問い合わせ</a>

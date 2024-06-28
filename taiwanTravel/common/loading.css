@@ -1,0 +1,50 @@
+/* ローディング画面 */
+@keyframes loading {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+[v-cloak] {
+    opacity: 0;
+}
+
+#loadingArea {
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: #007AB7;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingLogo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 287px;
+    height: 117px;
+    background-image: url(../images/logoHeaderSP.svg);
+}
+
+/* PC向け */
+@media (min-width: 768px) {
+    #loadingLogo {
+        width: 318px;
+        height: 128px;
+        background-image: url(../images/logoHeaderPC.svg);
+    }
+}
