@@ -4,7 +4,6 @@
 ***********/
 body {
   width: 100%;
-  /* min-height: 100%; */
   margin: 0 auto;
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
@@ -30,15 +29,15 @@ body {
 h2 {
   width: 220px;
   height: 40px;
-  margin: 20px auto 60px;
+  margin: 0 auto 60px;
   background-image: url("../images/headerBackSP.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  font-size: 8px;
+  font-size: 12px;
 }
 h2 span {
-  font-size: 2rem;
+  font-size: 2em;
 }
 /* モバイル非表示 */
 .sliderIcon1, .sliderIcon2 {
@@ -76,7 +75,7 @@ h1 {
 }
 h1 img {
   max-width: 100%;
-  padding-top:200px;
+  padding-top: 200px;
 }
 .snsTop {
   position: absolute;
@@ -141,7 +140,7 @@ p {
 .startImage {
   margin: 0 auto 60px;
 }
-.startImage picture img{
+.startImage picture img {
   width: 335px;
   height: 139px;
 }
@@ -155,15 +154,56 @@ p {
 } */
 
 /* Galleryコンテンツ領域 */
-#sliderContents {
+#sliderContent {
+  padding: 20px 0 0 0;
 }
-.sliderImage {
+#gallerySlider {
+  margin: 0 auto;
+}
+.carousel-inner {
+  width: 100vw;
+  height: 467px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.carousel-item {
+  width: 100vw;
+  /* padding: 0 auto; */
+}
+.carousel-item img {
+  width: 295px;
+  height: 467px;
+  padding: 0 auto;
+}
+.carousel-controls {
+  display: flex;
+  /* width: 100vw; */
+  margin: 0 auto;
+  justify-content: center;
+}
+.carousel-indicators {
+  margin: 20px 0;
+  position: static;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: black;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 0 20px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+/* .sliderImage {
   width: 295px;
   height: 467px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
-.slideImg {
+.slideImg{
   display: flex;
   overflow-x: hidden;
   justify-content: space-evenly;
@@ -182,7 +222,8 @@ p {
   justify-content:space-evenly;
 }
 .sliderIndicators {
-  justify-content: space-around;
+  justify-content: center;
+  margin: 20px auto 40px;
 }
 .button {
   display: flex;
@@ -193,13 +234,16 @@ p {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  /* border: solid 1px black; */
   background-color: grey;
+  margin: 0 20px;
 }
 .sliderIndicators .active {
   background-color: black;
-}
+} */
 /* Travelコンテンツ領域 */
+#travelContent {
+  padding: 20px 0 0 0;
+}
 #travelContent .textLine {
   width: 18.583rem;
   margin: 0 auto;
@@ -241,9 +285,15 @@ p {
 #eventContent {
   width: 375px;
   height: 1116px;
+  padding: 20px 0 0 0;
 }
 .eventImage {
   margin: 20px auto;
+  width: 335px;
+  height: 194px;
+}
+.eventImage img {
+  /* margin: 20px auto; */
   width: 335px;
   height: 194px;
 }
@@ -298,8 +348,8 @@ article .textLine {
   }
   /* コンテンツ下線 */
   .underLine {
-    width: 24rem;
-    margin: 4rem auto;
+    width: 480px;
+    margin: 80px auto;
   }
   /* PC h2設定 */
   h2 {
@@ -317,6 +367,7 @@ article .textLine {
   .topView {
     background-image: url("../images/heroPC.png");
     padding: 0;
+    height: 768px;
   }
   header {
     width: 100%;
@@ -332,17 +383,18 @@ article .textLine {
     left: 223px;
     width: 780px;
     height: 314px;
+    padding: 0;
   }
   .snsTop {
-    top: 66.666%;
-    left: 7.540%;
+    top: 512px;
+    left: 103px;
   }
   .snsTop img {
     min-width: 32px;
   }
   /* ヘッダー領域 */
   .headLogo {
-    width: 6.65rem;
+    width: 133px;
     height: auto;
   }
   .globalMenu{
@@ -378,30 +430,37 @@ article .textLine {
   /* PCコンテンツ領域 */
   .startContents1 {
     background-image: url("../images/infoBack1PC.png");
+    padding: 80px auto;
   }
   .startContents2 {
     background-image: url("../images/infoBack2PC.png");
+    padding: 80px auto;
   }
   .startContents1, .startContents2 {
     display: flex;
-    padding: 4rem 5.15rem;
-  }
-  .startFlag {
-    width: 5.2rem;
-    margin-left: 9rem;
+    padding: 80px auto;
   }
   .startFlex1 {
     text-align: left;
+    padding: 80px auto;
+    width: 524px;
+  }
+  .startFlag {
+    width: 104px;
+    height: 78px;
+    margin: 0 auto;
   }
   .startFlex1 h3 {
-    font-size: 2.4rem;
-    padding: 5rem 0 1rem 0;
+    font-size: 48px;
+    width: 0;
+    margin: 0;
+    padding: 100px 0 20px 0;
   }
   .startFlex1 p {
-    font-size: 1.6rem;
-    width: 18.05rem;
-    padding-bottom: 1rem;
-    margin-right: 8.15rem;
+    font-size: 32px;
+    width: 361px;
+    /* padding-bottom: 1rem;
+    margin-right: 8.15rem; */
   }
   .startImage picture img{
     width: 636px;
@@ -413,6 +472,42 @@ article .textLine {
     margin-right: 5.2rem;
   }
   /* Galleryコンテンツ領域 */
+  .carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: block;
+    position: static;
+    width: 64px;
+    height: 64px;
+    margin: 0;
+  }
+  .carousel-control-prev {
+    margin-right: 30px;
+  }
+  .carousel-control-next {
+    margin-left: 30px;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 28px;
+    height: 28px;
+    margin: 0 30px;
+  }  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 64px;
+    height: 64px;
+    filter: none;
+  }
+  .carousel-control-prev-icon {
+    background-image: url(../images/slideLeft.svg);
+  }
+  .carousel-control-next-icon {
+    background-image: url(../images/slideRight.svg);
+  }
   .onlyPc {
     display: block;
   }
@@ -480,6 +575,7 @@ article .textLine {
     top: 20.1rem;
     right: 7.1rem;
   }
+
   /* eventコンテンツ領域 */
   #eventContent {
     margin-top: 4rem;
@@ -496,8 +592,8 @@ article .textLine {
     line-height: 1.6;
   }
   .event1, .event2 {
-    margin: 4rem 5.15rem 4rem 5.15rem;
     display: flex;
+    margin: 0;
     padding: 0;
   }
   .event2 {
@@ -506,9 +602,9 @@ article .textLine {
   .pcEvent1 {
     text-align: left;
   }
-  .pcEvent1, .pcEvent2 {
+  /* .pcEvent1, .pcEvent2 {
     width: 29rem;
-  }
+  } */
   .eventImage {
     padding: 0;
   }
@@ -517,6 +613,10 @@ article .textLine {
   }
   .event2 .event {
     padding: 9.36rem 0 1.6rem 0;
+  }
+  .eventImage img {
+    width: 580px;
+    height: 396px;
   }
   .eventText {
     width: 21.25rem;
