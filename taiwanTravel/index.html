@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>TaiwanTravel</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="common/loading.css" type="text/css">
   <link rel="stylesheet" href="common/drawer.css" type="text/css">
   <link rel="stylesheet" href="common/footer.css" type="text/css">
   <link rel="stylesheet" href="common/backTop.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
-<body>
-  <div id="wrapper">
+<body id="top">
+  <div id="wrapper" v-cloak>
     <div class="topView">
       <!-- ドロワーのコンポーネント -->
       <drawer></drawer>
@@ -26,7 +27,7 @@
         <a href="">お問い合わせ</a>
       </nav>
       <h1>
-        <picture>
+        <picture class="topImages">
           <source srcset="images/mainlogoSP.png" media="(max-width: 768px)" alt="タイトルロゴ">
           <img src="images/mainlogoPC.svg" alt="タイトルロゴ">
         </picture>
@@ -40,43 +41,88 @@
 
     <section id="startContents">
       <div class="startContents1">
-        <div class="startFlex1"> <img src="images/taiwanFlagPC.svg" class="startFlag" alt="国旗">
+        <div class="startFlex1">
+          <picture>
+            <source srcset="images/taiwanFlagSP.svg" media="(max-width: 768px)" alt="紹介１">
+            <img src="images/taiwanFlagPC.svg" class="startFlag" alt="台湾旗">
+          </picture>
           <h3>Formosa</h3>
           <p>フォルモサ（麗しの島）</p>
         </div>
         <div class="startImage">
           <picture>
-            <source srcset="images/infoImg1PC.png" media="(max-width: 768px)" alt="紹介１">
-            <img src="images/infoImg1SP.png" alt="紹介１">
+            <source srcset="images/infoImg1SP.png" media="(max-width: 768px)" alt="紹介１">
+            <img src="images/infoImg1PC.png" alt="紹介１">
           </picture>
         </div>
       </div>
       <div class="startContents2">
         <div class="startText">
-          <p align="justify" class="textLine">フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
+          <p align="justify" class="textLine">
+            フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。
+          </p>
         </div>
         <div class="startImage">
           <picture>
-            <source srcset="images/infoImg2PC.png" media="(max-width: 768px)" alt="紹介2">
-            <img src="images/infoImg2SP.png" alt="紹介2"> </picture>
+            <source srcset="images/infoImg2SP.png" media="(max-width: 768px)" alt="紹介2">
+            <img src="images/infoImg2PC.png" alt="紹介2"> </picture>
         </div>
       </div>
     </section>
     
     <section id="sliderContent">
-      <h2><span>Gallery&ensp;</span>ギャラリー</h2>
-      <div id="imgSlider">
-        <div class="slideImg"></div>
-        <div class="sliderContloler">
-          <div class="prev onlyPc">＜</div>
-          <div class="sliderIndicators"></div>
-          <div class="next onlyPc">＞</div>
+      <h2><span>Gallery</span>&ensp;ギャラリー</h2>
+      <div id="gallerySlider" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/sliderImg1.png" class="d-block mx-auto" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/sliderImg2.png" class="d-block mx-auto" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/sliderImg3.png" class="d-block mx-auto" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/sliderImg4.png" class="d-block mx-auto" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/sliderImg5.png" class="d-block mx-auto" alt="...">
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-control-prev" type="button" data-bs-target="#gallerySlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gallerySlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#gallerySlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#gallerySlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#gallerySlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#gallerySlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#gallerySlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
+
+      <!-- 自作
+        <div id="imgSlider">
+          <div class="slideImg"></div>
+          <div class="sliderContloler">
+            <div class="prev onlyPc">＜</div>
+            <div class="sliderIndicators"></div>
+            <div class="next onlyPc">＞</div>
+          </div>
+        </div>
+      -->
     </section>
 
     <section id="travelContent">
-      <h2><span>Travel&ensp;</span>おすすめスポット</h2>
+      <h2><span>Travel</span>&ensp;おすすめスポット</h2>
       <div class="pcTravel">
         <div class="travelText">
           <p align="justify" class="textLine">訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介。様々な風景に誰もが魅了されます。</p>
@@ -92,14 +138,15 @@
     </section>
 
     <section id="eventContent">
-      <h2><span>Event&ensp;</span>おすすめイベント</h2>
+      <h2><span>Event</span>&ensp;おすすめイベント</h2>
       <article class="event1">
         <div class="pcEvent1">
           <h3>台湾ランタンフェスティバル</h3>
           <div class="eventImage">
             <picture>
               <source srcset="images/eventLantanSP.png" media="(max-width: 768px)" alt="ランタン">
-              <img src="images/eventLantanPC.png" alt="ランタン"> </picture>
+              <img src="images/eventLantanPC.png" alt="ランタン">
+            </picture>
           </div>
         </div>
         <div class="pcEvent2">
@@ -170,6 +217,7 @@
   <script src="common/drawer.js"></script>
   <script src="common/footer.js"></script>
   <script src="common/backTop.js"></script>
+  <!-- <script src="common/loading.js"></script> -->
   <script src="common/vueMain.js"></script>
   <script src="scripts/script.js"></script>
 </body>
