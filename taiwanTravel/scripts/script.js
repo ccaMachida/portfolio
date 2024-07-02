@@ -21,7 +21,7 @@ function preloadImage(path) {
     imgTag.src = path.url;
 }
 
-// スライダー
+// 自作スライダー
 // class slider {
 //     constructor(images, num) {
 //         this.useImages = images;
@@ -44,14 +44,20 @@ function preloadImage(path) {
 //     }
 // }
 
+/* imgPath配列を用意 */
 // let imgPath = [];
+
+/* sliderImageクラスの画像を全取得 */
 // const images = document.querySelectorAll('.sliderImage');
 
+/* images配列の先頭要素を基本とする */
 // let current = images[0].imgNo;
 
+/* スライダー画像とインジケーターをページ上に配置する関数呼び出し */
 // setSliderImages();
 // setSliderIndicators();
 
+/* スライダー画像を配置する関数 */
 // function setSliderImages(){
 //     const targetDiv = document.querySelector('.slideImg');
 //     images.forEach(function(item, index) {
@@ -63,6 +69,7 @@ function preloadImage(path) {
 //     });
 // }
 
+/* スライダーのインジケーターを配置する関数 */
 // function setSliderIndicators(){
 //     const targetDiv = document.querySelector('.sliderIndicators');
 //     let indicator = `<div class="indicator setShape"></div>`;
@@ -72,6 +79,7 @@ function preloadImage(path) {
 //     changeIndicator();
 // }
 
+/* 「前へ」ボタンを押したときの動き */
 // document.querySelector('.prev').onclick = function(){
 //     const lastItem = images[images.length-1];
 //     current--;
@@ -84,6 +92,7 @@ function preloadImage(path) {
 //     changeIndicator();
 // };
 
+/* 「次へ」ボタンを押したときの動き */
 // document.querySelector('.next').onclick = function(){
 //     const firstItem = images[0];
 //     current++;
@@ -96,12 +105,14 @@ function preloadImage(path) {
 //     changeIndicator();
 // };
 
+/* 画像を変更する関数 */
 // function changeImage() {
 //     const targetDiv = document.querySelector('.slideImg');
 //     targetDiv.replaceChildren();
 //     setSliderImages();
 // }
 
+/* インジケーターを変更する関数 */
 // function changeIndicator() {
 //     const targetDiv = document.querySelectorAll('.indicator');
 //     let browsImg = 1;
