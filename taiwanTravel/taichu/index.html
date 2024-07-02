@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>TaiwanTravel｜台中</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/loading.css" type="text/css">
   <link rel="stylesheet" href="../common/drawer.css" type="text/css">
   <link rel="stylesheet" href="../common/footer.css" type="text/css">
   <link rel="stylesheet" href="../common/backTop.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
-<body>
-  <div id="wrapper">
+<body id="taichu">
+  <div id="wrapper" v-cloak>
     <div class="topView">
         <!-- ドロワーのコンポーネント -->
         <drawer></drawer>
@@ -297,7 +298,8 @@
   <script src="../common/drawer.js"></script>
   <script src="../common/footer.js"></script>
   <script src="../common/backTop.js"></script>
+  <script src="../common/loading.js"></script>
   <script src="../common/vueMain.js"></script>
-  <script src="scripts/script.js"></script>
+  <!-- <script src="scripts/script.js"></script> -->
 </body>
 </html>
