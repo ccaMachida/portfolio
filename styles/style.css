@@ -1,0 +1,15 @@
+/* カスタムCSS */
+/* .menuUplayer {
+} */
+.snsLogo {
+    margin:0 8px 0 0;
+}
+.ffDotGothic16 {
+    font-family: 'DotGothic16', sans-serif;
+}
+h1 {
+    font-weight: bold;
+}
+body {
+    background-color: azure;
+}
